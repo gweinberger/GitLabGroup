@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GitLabGroup": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
