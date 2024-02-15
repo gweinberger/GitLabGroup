@@ -4,6 +4,11 @@
 
 Adds a bulk of Users to a Gitlab group.
 
+## Build
+```
+dotnet build .
+```
+
 ## Arguments
 ```
 GitLabGroup.exe --url=[Gitlab-URL] --token=[PRIVATE-TOKEN] --group=[groupname] --permission=[Guest|Reporter|Developer|Maintainer|Owner] --file=[CSV-File]
