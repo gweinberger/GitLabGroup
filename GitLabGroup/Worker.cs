@@ -12,7 +12,7 @@ namespace GitLabGroup
         private string groupname = "";
         private string csvFile = "";
 
-        internal enum Permission
+        internal enum Permission  //predefined by GitLab: https://docs.gitlab.com/ee/api/access_requests.html
         {
             guest = 10,
             reporter = 20,
@@ -65,7 +65,7 @@ namespace GitLabGroup
                                 string responseInString = Encoding.UTF8.GetString(response);
                                 if (responseInString.ToLower().Contains("\"id\":"))
                                 {
-                                    log($"{item} added", ConsoleColor.Green);
+                                    log($" added", ConsoleColor.Green);
                                     countNew++;
                                 }
                             }

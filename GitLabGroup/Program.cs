@@ -7,6 +7,7 @@ namespace GitLabGroup
         static void Main(string[] args)
         {
             Console.WriteLine($"GitLabGroup (c)2024{(DateTime.Now.Year != 2024 ? "-" + DateTime.Now.Year.ToString() : "")} Gerald Weinberger");
+            Console.WriteLine("");
             try
             {
                 IConfigurationRoot configuration = new ConfigurationBuilder().AddCommandLine(args).Build();
